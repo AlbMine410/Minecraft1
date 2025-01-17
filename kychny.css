@@ -1,0 +1,65 @@
+body {
+   background-color:rgb(218, 194, 255);
+}
+nav {
+    background-color: #ffcc5e; 
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px; 
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  nav li {
+    margin: 0 15px;
+    margin-bottom: 5px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    padding: 20px 10px;
+    border-radius: 5px;
+  }
+  
+  nav a:hover {
+    background-color: #008080;
+  }
+  
+  #logo {
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+  }
+  #logo:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  #logo {
+    animation: rotation 5s linear infinite;
+    width: 200px;
+    height: auto;
+  }
+  
+  #logo:hover {
+    animation-play-state: paused;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

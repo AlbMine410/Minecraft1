@@ -1,0 +1,158 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffcc5e; 
+}
+
+nav {
+  background-color: #40E0D0; 
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px; 
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0 15px;
+  margin-bottom: 5px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 20px 10px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #008080;
+}
+
+#logo {
+  max-width: 150px;
+}
+
+main {
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  flex: 0 0 85%;
+  max-width: 85%;
+  margin-right: 5%;
+}
+
+.ad-right {
+  flex: 0 0 15%;
+  max-width: 30%;
+}
+
+.ad-right img {
+  width: 80%;
+  height: auto;
+}
+
+footer {
+  background-color: #333; 
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  margin-bottom: 10px;
+}
+
+.social-media {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-media a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-media i {
+  font-size: 1.5em;
+}
+
+.copyright {
+  font-size: 0.8em;
+}
+
+.block-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 10px;
+}
+
+.block {
+  border: 1px solid #000000;
+  padding: 10px;
+  text-align: center;
+}
+
+.block img {
+  max-width: 100%;
+  height: auto;
+}
+#logo {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+#logo:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+#logo {
+  animation: rotation 5s linear infinite;
+  width: 200px;
+  height: auto;
+}
+
+#logo:hover {
+  animation-play-state: paused;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.element { padding: 10px; margin-bottom: 10px; }
+#tert{
+  color: #1339f3;
+}
+#famo{
+  text-align: right;
+  font-size: 40px;
+}
+#get {
+  font-size: 25px;
+  font-weight: 350;
+}
+
